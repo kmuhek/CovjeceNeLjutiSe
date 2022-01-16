@@ -1,0 +1,87 @@
+.board {
+  position: relative;
+  height: 375px;
+  width: 375px;
+  margin: 100px;
+}
+
+.tile {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  box-sizing: border-box;
+  border: 5px solid green;
+  border-radius: 50%;
+}
+
+.top-row, .bottom-row {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+.left-col, .right-col {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 75px;
+}
+
+.left-col {
+  
+  left: 0;
+}
+
+.right-col {
+  right: 0;
+}
+
+.top-row {
+  top: 0;
+}
+
+.bottom-row {
+  bottom: 0;
+}
+
+.special {
+  border: 5px solid red;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.special-1 {
+  bottom: 75px;
+  left: 75px;
+}
+
+.special-2 {
+  bottom: 100px;
+  left: 100px;
+}
+
+.special-3 {
+  top: 75px;
+  right: 75px;
+}
+
+.special-4 {
+  top: 100px;
+  right: 100px;
+}
+
+.filled {
+  background-color: red;
+}
+
+.finish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
